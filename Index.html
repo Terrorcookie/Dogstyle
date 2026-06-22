@@ -9,20 +9,17 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
     <meta name="apple-mobile-web-app-title" content="Dogstyle" />
     <link rel="manifest" href="/manifest.json" />
-    <!-- Leaflet CSS für echte Karten -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css" />
     <title>Dogstyle 2.0 🐾</title>
     <style>
       * { margin: 0; padding: 0; box-sizing: border-box; }
       body { background: #0D1B2A; font-family: system-ui, -apple-system, sans-serif; }
       #root { min-height: 100vh; }
-      .leaflet-container { background: #1A2A3A; }
+      .leaflet-container { background: #1A2A3A !important; }
+      .leaflet-tile-pane { filter: brightness(0.9) saturate(0.8); }
     </style>
   </head>
   <body>
     <div id="root"></div>
-    <!-- Leaflet JS für echte Karten -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
